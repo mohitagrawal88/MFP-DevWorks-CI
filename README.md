@@ -4,7 +4,8 @@
 ## How to use this?
 To run this sample project there are two prequisites  
 1. Fix the varible exports in `ciBuild/common-functions.sh` file to reflect your environment.  
-2. Move the MFP jar files into the `ciBuild/ant_dir` folder.
+2. Move the ant task definitions into  `ciBuild` folder.  
+3. Move the MFP jar files into the `ciBuild/ant_dir` folder.
 
 With these components in place run the `mfp-ci-build.sh` script on a terminal
 
@@ -31,8 +32,14 @@ Fix the location of your MFP server install
 export WORKLIGHT_INSTALL_DIR="/path/to/MobileFirst_Platform_Server"
 ```
 
+## Ant XML files
+Copy the `build.xml` file from the CLI tooling install directory into `ciBuild`. 
+For a MAC this file is located in the following dir   
+`/Applications/IBM/MobileFirst-CLI/mobilefirst-cli/node_modules/generator-worklight-server/lib`   
+The `configure-liberty-derby.xml` file is found in server install directory. 
+`/Applications/IBM/MobileFirst_Platform_Server/WorklightServer/configuration-samples/`
 
-## For the ant_jars dir
+## Ant Jar files
 Copy the jar files in the lib directory where the CLI tooling is installed into the `ciBuild/ant_dir` folder folder along with the ant-tools directory contents.
 For a MAC these files are located in the following dir   
 `/Applications/IBM/MobileFirst-CLI/mobilefirst-cli/node_modules/generator-worklight-server/lib`   
