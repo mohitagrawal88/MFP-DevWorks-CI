@@ -1,5 +1,6 @@
 # MFP-DevWorks-CI
 
+Sample project to go along with [DeveloperWorks Article](http://www.ibm.com/developerworks/websphere/library/techarticles/1503_marland/1503_marland.html) that demonstrates the ideas used to auotmate build and deploy of MFP componenets
 
 ## How to use this?
 To run this sample project there are two prequisites  
